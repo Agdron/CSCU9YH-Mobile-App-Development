@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_marginTop="125dp"
+        android:id="@+id/selectedDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date: Not Selected"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/noteInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your note here" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Optional: Select a colour based on your mood"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/redButton"
+            style="@android:style/Widget.Material.Light.Button.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#e33314" />
+
+        <Button
+            android:id="@+id/yellowButton"
+            style="@android:style/Widget.Material.Light.Button.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#edbe21" />
+
+        <Button
+            android:id="@+id/greenButton"
+            style="@android:style/Widget.Material.Light.Button.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#48c716" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/selectedMoodTrack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mood: Not Selected"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/addPhotoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Photo" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Save Note" />
+
+    <Button
+        android:id="@+id/clearButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear" />
+</LinearLayout>
